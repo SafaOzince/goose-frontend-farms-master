@@ -34,23 +34,23 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
   },
-  {
-    pid: 2,
-    risk: 5,
-    isTokenOnly: true,
-    lpSymbol: 'RBS',
-    lpAddresses: {
-      97: '0x099CCB61EFfd54aEA57611F81c955cF28eAa8502', // must be change
-      56: '0x19e7cbecdd23a16dfa5573df54d98f7caae03019',  // EGG-BUSD LP
-    },
-    tokenSymbol: 'RBS',
-    tokenAddresses: {
-      97: '0xe90685e7Ca8f7a61ea5086965A1242919061E519', // must be change
-      56: '0xf952fc3ca7325cc27d15885d37117676d25bfda6',
-    },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
-  },
+  // {
+  //   pid: 2,
+  //   risk: 5,
+  //   isTokenOnly: true,
+  //   lpSymbol: 'RBS',
+  //   lpAddresses: {
+  //     97: '0x099CCB61EFfd54aEA57611F81c955cF28eAa8502', // must be change
+  //     56: '0x19e7cbecdd23a16dfa5573df54d98f7caae03019',  // EGG-BUSD LP
+  //   },
+  //   tokenSymbol: 'RBS',
+  //   tokenAddresses: {
+  //     97: '0xe90685e7Ca8f7a61ea5086965A1242919061E519', // must be change
+  //     56: '0xf952fc3ca7325cc27d15885d37117676d25bfda6',
+  //   },
+  //   quoteTokenSymbol: QuoteToken.BUSD,
+  //   quoteTokenAdresses: contracts.busd,
+  // },
   // {
   //   pid: 1,
   //   risk: 5,
