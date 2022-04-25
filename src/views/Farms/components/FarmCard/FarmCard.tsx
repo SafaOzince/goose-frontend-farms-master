@@ -101,7 +101,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
 
   const totalValue: BigNumber = useMemo(() => {
     if (!farm.lpTotalInQuoteToken) {
-      return null
+      return null 
     }
     if (farm.quoteTokenSymbol === QuoteToken.BNB) {
       return bnbPrice.times(farm.lpTotalInQuoteToken)
@@ -109,11 +109,12 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
     if (farm.quoteTokenSymbol === QuoteToken.CAKE) {
       return cakePrice.times(farm.lpTotalInQuoteToken)
     }
+    // alert("slm3");
     return farm.lpTotalInQuoteToken
   }, [bnbPrice, cakePrice, farm.lpTotalInQuoteToken, farm.quoteTokenSymbol])
 
   const totalValueFormated = totalValue
-    ? `$${Number(totalValue).toLocaleString(undefined, { maximumFractionDigits: 0 })}`
+    ? `$${Number(totalValue).toLocaleString(undefined, { maximumFractionDigits: 2 })}`
     : '-'
 
   const lpLabel = farm.lpSymbol

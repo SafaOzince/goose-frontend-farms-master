@@ -50,7 +50,7 @@ const NftGlobalNotification = () => {
   const [onPresentBurnModal] = useModal(<NftYouWonModal />)
   const showModal = useRef(() => onPresentBurnModal())
 
-  useEffect(() => {
+ // useEffect(() => {
     // const checkNftStatus = async () => {
     //   const [totalSupplyDistributedArr, currentDistributedSupplyArr, canClaimArr, hasClaimedArr] = await multicall(
     //     rabbitmintingfarm,
@@ -76,7 +76,7 @@ const NftGlobalNotification = () => {
     // if (account && !document.location.href.includes('/nft')) {
     //   checkNftStatus()
     // }
-  }, [account, showModal])
+ // }, [account, showModal])
 
   return <div />
 }
